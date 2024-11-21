@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Header Styles */
+        .he {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        .he h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Navbar Styles */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #4CAF50;
+        }
+
+        /* Main Content */
+        .content {
+            margin-top: 100px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        /* Post Section */
+        .post2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .post {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .post img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .post h3 {
+            font-size: 1.5rem;
+            color: #333;
+            padding: 15px 20px 5px;
+            margin: 0;
+        }
+
+        .post p {
+            font-size: 1rem;
+            color: #555;
+            padding: 0 20px 15px;
+            margin: 0;
+        }
+
+        .post a {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 0 0 10px 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .post a:hover {
+            background-color: #333;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul li a {
+                font-size: 14px;
+            }
+
+            .he h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.8rem;
+            }
+
+            .content p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Welcome Section -->
+    <div class="content">
+        <h2>Welcome to My Blog!</h2>
+        <p>Discover stories, projects, and ideas that inspire.</p>
+    </div>
+
+    <!-- Post Section -->
+    <section class="post2">
+        <div class="post">
+            <img src="https://codingweek.org/wp-content/uploads/2019/08/christopher-robin-ebbinghaus-pgSkeh0yl8o-unsplash.jpg" alt="Coding">
+            <h3>How I Started Writing Code for Clients</h3>
+            <p>I’ve been passionate about coding since childhood. Here’s how I began...</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="post">
+            <img src="https://getinfolist.com/wp-content/uploads/2015/08/Learn-coding-online.jpeg" alt="Programming Language">
+            <h3>My First Programming Language</h3>
+            <p>Let me share the story of the first programming language I ever learned...</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="post">
+            <img src="https://image.lexica.art/full_jpg/15c57871-d733-4fdc-8883-4a2040cd3d95" alt="Coding Journey">
+            <h3>Things I Wish I Knew Before Starting</h3>
+            <p>Starting a coding journey is exciting but challenging. Here’s what I wish I knew...</p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Blog. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
